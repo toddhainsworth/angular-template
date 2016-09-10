@@ -1,8 +1,8 @@
 {
-  "name": "angular-project",
+  "name": "angular-template",
   "private": true,
   "version": "1.0.0",
-  "description": "Angular Project",
+  "description": "Angular Project Template",
   "scripts": {
     "postinstall": "bower install",
     "prestart": "npm install",
