@@ -1,18 +1,25 @@
 <html ng-app="myApp">
   <head>
-    <title>AngularJS Application</title>
+    <title>Angular Project</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="app.css" />
   </head>
   <body>
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div ng-view></div>
+    <div class="container">
+      <div ng-view></div>
+    </div>
 
     <script src="bower_components/angular/angular.js" type="text/javascript"></script>
     <script src="bower_components/angular-route/angular-route.js" type="text/javascript"></script>
+    <script src="bower_components/angular-resource/angular-resource.js" type="text/javascript"></script>
     <script src="app.js" type="text/javascript"></script>
-    <script src="router.js" type="text/javascript"></script>
+    <script src="factories/posts.js" type="text/javascript"></script>
     <script src="controllers/posts.js" type="text/javascript"></script>
+    <script src="router.js" type="text/javascript"></script>
   </body>
 </html>
+

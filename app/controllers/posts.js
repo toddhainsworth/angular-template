@@ -1,2 +1,3 @@
-angular.module('myApp.posts').controller('PostsCtrl', ['$scope', function($scope) {
+angular.module('myApp.controllers.posts', ['myApp.factories.posts']).controller('PostsCtrl', ['$scope', 'Posts', function($scope, Posts) {
+  this.posts = Posts.query();
 }]);
